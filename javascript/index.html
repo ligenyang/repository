@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<script type="text/javascript">
+    // 监听器 对象属性值的变化, 触发 set 方法
+    var data = document.getElementsByTagName('div');
+    observe(data);
+    data.name = 'dmq'; // 哈哈哈，监听到值变化了 kindeng --> dmq
+</script>
+</body>
+</html>
